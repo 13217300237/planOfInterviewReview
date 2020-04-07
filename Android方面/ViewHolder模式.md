@@ -1,0 +1,12 @@
+# ViewHolder模式
+
+
+
+概念：ViewHolder模式起初来自ListView的view复用。大意为：使用ViewHolder一个普通类，其中包含所有需要用到的view对象。当ListView滑动的时候，可能会导致view的重复 findViewById . 使用ViewHolder可以避免没有必要的findViewById，可以提升性能。
+
+但是ListView并没有强制开发者使用ViewHolder模式。
+
+## 但是
+
+RecyclerView，继承ListView特性的同时，把viewHolder模式融入了源码，从recyclerView的几个重写方法的名字可以看出，onCreateViewHolder，onBindViewHolder 就能看出，RecyclerView的复用也是以ViewHolder为单位，而ListView的复用都是以View为单位。效率上，RecyclerView比ListView要高。
+
