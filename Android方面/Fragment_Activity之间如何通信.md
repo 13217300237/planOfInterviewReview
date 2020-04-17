@@ -188,5 +188,5 @@ class SecondActivity : AppCompatActivity() {
 
 
 
-
+我自己的Demo地址：https://github.com/18598925736/LiveDataBusDemo
 
