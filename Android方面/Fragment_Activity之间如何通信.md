@@ -170,13 +170,21 @@ class SecondActivity : AppCompatActivity() {
 
 - 当我在 SecondActivity点击发送消息，之后，Toast也未弹出，而是回到MainActivity时，Toast也弹出了
 
-这说明，**LiveDataBus** 相当于 ** RxJava或者EventBus结合了 LifeCycle生命周期自动感知机制**。消息发出之后，会根据对方是否可见来决定是否执行消息。
+这说明，**LiveDataBus** 相当于 **RxJava或者EventBus结合了 LifeCycle生命周期自动感知机制**。消息发出之后，会根据对方是否可见来决定是否执行消息。
+
+
+
+
 
 
 
 原始博文来源：https://www.jianshu.com/p/4796ce3ae308
 
 原始Demo：https://github.com/hunimeizi/HaoLin_LiveDataBus_Sample
+
+
+
+如果非要说LiveDataBus有什么关键点，那就是，它是**如何在通知观察者的时候 融合Activity/Fragment的生命周期**
 
 
 
