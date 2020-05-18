@@ -62,6 +62,10 @@
 
   
 
+  ![img](Java回收机制，如何减少OOM.assets/FWD29FY_WZ5DPQVSV0J3KHM.png)
+
+  
+
 - 本地方法栈JNI中的对象
 
   和本地变量表一样理解即可。
